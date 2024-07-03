@@ -2,9 +2,12 @@ import { FaFacebook, FaInstagram, FaLinkedin, } from 'react-icons/fa';
 import hero from '../assets/hero_img.png'
 import {  FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import Navbar from '../Components/Navbar';
 const Home = () => {
     return (
-        <div className="overflow-hidden p-12">
+        <div className="overflow-hidden ">
+            <Navbar></Navbar>
+
             {/* Hero section */}
 
             <div className="h-full w-1/3 bg-[#c471ed] absolute blur-3xl rounded-full m-auto left-0 right-0 top-0 bottom-0 opacity-15 -z-20 "></div>
@@ -12,7 +15,7 @@ const Home = () => {
             {/* <div className=" h-full w-1/3 bg-[#f64f59] absolute blur-3xl rounded-full left-50 right-0 top-0 bottom-0 opacity-15 -z-20 ">
 
             </div> */}
-            <div className='flex'>
+            <div id='home' className='flex p-12 mt-24'>
               <div>
                 <div>
                     <h3 className='text-[#FF6D5A] text-xl font-semibold px-8 py-4 shadow-lg shadow-[#f64f59] rounded-r-full'><li>Frontend Developer</li> <br />
@@ -56,7 +59,9 @@ const Home = () => {
             </div>
             {/* Hero section ends*/}
 
-            
+            <div id="about" className='h-screen text-white'>
+                   this is about section
+            </div>
         </div>
     );
 };
