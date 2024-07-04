@@ -16,10 +16,11 @@ const Navbar = () => {
         <div >
             {/* desktop menu */}
             <div className={`hidden lg:flex justify-between border-b px-12 py-8 items-center fixed w-full z-50  border-[rgba(56,57,60,1)] ${scroll > 30 ? "bg-[rgba(0,0,0,0.8)]" : ''}`}>
+            <h2 className="text-white text-2xl font-semibold">Logo</h2>
             <ul className="text-white flex gap-6 blur-0">
                 <li><HashLink smooth to="/#home">Home</HashLink></li>
                 <li><HashLink smooth to="/#about">About</HashLink></li>
-                <li><HashLink smooth to="/#skill">Skills</HashLink></li>
+                <li><HashLink smooth to="/#skills">Skills</HashLink></li>
                 <li><HashLink smooth to="/#Projects">Projects</HashLink></li> 
             </ul>
             <button className="text-white blur-0 flex items-center gap-2 bg-[#FF6D5A] font-semibold px-4 py-2 rounded-xl"><FaDownload></FaDownload> Download CV</button>

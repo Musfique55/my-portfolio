@@ -1,8 +1,20 @@
-import { FaFacebook, FaInstagram, FaLinkedin, } from 'react-icons/fa';
-import hero from '../assets/hero_img.png'
+import { FaFacebook, FaGithub, FaLinkedin, } from 'react-icons/fa';
+import html from '../assets/html.png';
+import css from '../assets/csss.png';
+import js from '../assets/js.png';
+import tailwind from '../assets/tailwind.png';
+import react from '../assets/react.png';
+import express from '../assets/express.png';
+import mongo from '../assets/mongo.png';
+import bootstrap from '../assets/bootstrap.png';
+import hero from '../assets/hero_img.png';
 import {  FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
+import Marquee from 'react-fast-marquee';
+import ParallaxText from '../Components/Velocity';
+import Footer from '../Components/Footer';
+import Contact from '../Components/Contact';
 const Home = () => {
     return (
         <div className="overflow-hidden ">
@@ -31,7 +43,7 @@ const Home = () => {
                 </Link>
                 <Link> <FaLinkedin className='text-2xl text-[#f64f59] cursor-pointer'/>
                 </Link>
-               <Link><FaInstagram className='text-2xl text-[#f64f59] cursor-pointer'/>
+               <Link><FaGithub className='text-2xl text-[#f64f59] cursor-pointer'/>
                </Link>
                 <Link><FaXTwitter className='text-2xl text-[#f64f59] cursor-pointer'/>
                 </Link>
@@ -58,10 +70,41 @@ const Home = () => {
               </div>
             </div>
             {/* Hero section ends*/}
-
+            
+            {/* about section */}
             <div id="about" className='h-screen text-white'>
                    this is about section
             </div>
+            {/* about section ends */}
+
+            {/* my skills  */}
+            <div id='skills' className='h-screen relative'>
+            <div className='text-white text-7xl text-nowrap font-mono font-bold mb-20'>
+                <ParallaxText className="text-white" baseVelocity={-10}>The Langauge</ParallaxText>
+                <ParallaxText  baseVelocity={10}>& Technologies</ParallaxText>
+            </div>
+            <div className=" h-full w-1/3 bg-[#c471ed] absolute blur-3xl rounded-full m-auto left-0 right-0 top-0 bottom-0 opacity-15 -z-20 ">
+
+            </div>
+            <Marquee gradient={true} gradientColor='black'>
+                
+                <img src={html} alt="html" className='h-44 mr-20 '/>
+                <img src={css} alt="css" className='h-44 mr-20'/>
+                <img src={tailwind} alt="css" className='h-32 mr-20'/>
+                <img src={bootstrap} alt="css" className='h-44 mr-20'/>
+                <img src={js} alt="css" className='h-44 mr-20'/>
+                <img src={react} alt="css" className='h-44 mr-20'/>
+                <img src={express} alt="css" className='h-44 mr-20'/>
+                <img src={mongo} alt="css" className='h-44 mr-20'/>
+            </Marquee>
+            </div>
+            {/* my skills ends */}
+
+            {/* contact */}
+            <Contact></Contact>
+
+            {/* footer */}
+            <Footer></Footer>
         </div>
     );
 };
