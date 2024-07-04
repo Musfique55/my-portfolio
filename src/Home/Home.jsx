@@ -6,6 +6,7 @@ import tailwind from '../assets/tailwind.png';
 import react from '../assets/react.png';
 import express from '../assets/express.png';
 import mongo from '../assets/mongo.png';
+import firebase from '../assets/firebase.png';
 import bootstrap from '../assets/bootstrap.png';
 import hero from '../assets/hero_img.png';
 import {  FaXTwitter } from 'react-icons/fa6';
@@ -15,6 +16,7 @@ import Marquee from 'react-fast-marquee';
 import ParallaxText from '../Components/Velocity';
 import Footer from '../Components/Footer';
 import Contact from '../Components/Contact';
+import Projects from '../Components/Projects';
 const Home = () => {
     return (
         <div className="overflow-hidden ">
@@ -73,12 +75,13 @@ const Home = () => {
             
             {/* about section */}
             <div id="about" className='h-screen text-white'>
-                   this is about section
+                   this is about 
             </div>
             {/* about section ends */}
 
             {/* my skills  */}
             <div id='skills' className='h-screen relative'>
+            <h2 className="text-white opacity-80 text-xl w-fit mx-auto px-8 py-2 bg-[rgba(255,255,255,0.05)] rounded-full border-4 border-[rgb(32,32,32)] border-spacing-4 my-12">Skiils & Knowledges</h2>
             <div className='text-white text-7xl text-nowrap font-mono font-bold mb-20'>
                 <ParallaxText className="text-white" baseVelocity={-10}>The Langauge</ParallaxText>
                 <ParallaxText  baseVelocity={10}>& Technologies</ParallaxText>
@@ -96,9 +99,14 @@ const Home = () => {
                 <img src={react} alt="css" className='h-44 mr-20'/>
                 <img src={express} alt="css" className='h-44 mr-20'/>
                 <img src={mongo} alt="css" className='h-44 mr-20'/>
+                <img src={firebase} alt="css" className='h-44 mr-20'/>
             </Marquee>
             </div>
             {/* my skills ends */}
+
+            {/* projects */}
+
+            <Projects></Projects>
 
             {/* contact */}
             <Contact></Contact>

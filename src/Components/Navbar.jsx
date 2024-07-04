@@ -21,7 +21,8 @@ const Navbar = () => {
                 <li><HashLink smooth to="/#home">Home</HashLink></li>
                 <li><HashLink smooth to="/#about">About</HashLink></li>
                 <li><HashLink smooth to="/#skills">Skills</HashLink></li>
-                <li><HashLink smooth to="/#Projects">Projects</HashLink></li> 
+                <li><HashLink smooth to="/#projects">Projects</HashLink></li> 
+                <li><HashLink smooth to="/#contact">Contact</HashLink></li> 
             </ul>
             <button className="text-white blur-0 flex items-center gap-2 bg-[#FF6D5A] font-semibold px-4 py-2 rounded-xl"><FaDownload></FaDownload> Download CV</button>
             </div>

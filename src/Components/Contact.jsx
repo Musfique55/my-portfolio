@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Contact = () => {
     return (
-        <div className="h-screen relative px-12">
+        <div id="contact" className="h-screen relative px-12">
             <div className="h-full w-1/3 bg-[#c471ed] absolute blur-3xl rounded-full  left-0 right-0 top-0 bottom-0 opacity-15 -z-20 "></div>
             <div className=" h-full w-1/3 bg-[#f64f59] absolute blur-3xl rounded-full left-50 right-0 top-0 bottom-0 opacity-15 -z-20 "></div>
             <h2 className="text-white opacity-80 text-xl w-fit mx-auto px-8 py-2 bg-[rgba(255,255,255,0.05)] rounded-full border-4 border-[rgb(32,32,32)] border-spacing-4 my-12">Contact Us</h2>

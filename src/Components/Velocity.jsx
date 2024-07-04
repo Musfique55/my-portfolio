@@ -58,6 +58,7 @@ const ParallaxText = ({ children, baseVelocity = 100 }) => {
    */
   return (
     <div className="parallax">
+       
       <motion.div className="scroller flex gap-5" style={{ x }}>
         <span>{children} </span>
         <span>{children} </span>
