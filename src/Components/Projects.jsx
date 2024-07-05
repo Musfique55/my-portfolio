@@ -19,12 +19,12 @@ const Projects = () => {
 
     
     return ( 
-        <div className='px-12'>
+        <div className='px-5 lg:px-12'>
              <h2 className="text-white opacity-80 text-xl w-fit mx-auto px-8 py-2 bg-[rgba(255,255,255,0.05)] rounded-full border-4 border-[rgb(32,32,32)] border-spacing-4 my-12"> Recent Projects</h2>
             <div className='grid grid-cols-3 grid-rows-3 gap-6 '>
 
-                <div onMouseOver={() => {setId(1);setHover(true)}} onMouseLeave={() => setHover(false)}  className={`col-span-2 furniture row-span-1 h-full w-full relative ease-in-out delay-1000`}>
-                   <img src={furniture}  alt="" className=' h-full w-full'/>
+                <div onMouseOver={() => {setId(1);setHover(true)}} onMouseLeave={() => setHover(false)}  className={` col-span-3 furniture lg:row-span-1 h-full w-full relative ease-in-out delay-1000 cursor-pointer lg:col-span-2`}>
+                   <img src={furniture}  alt="" className=' h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 1 &&
                         <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
@@ -40,7 +40,7 @@ const Projects = () => {
                         <img src={furniture} alt="furniture" className=''/>
                         <h3 className="font-semibold text-white text-center text-lg mt-5">Arts & Craft Website</h3>
                         <h3 className='text-white font-semibold text-center mt-5'>Technology Used</h3>
-                        <div className="flex gap-10 justify-center mt-5">
+                        <div className="flex flex-wrap gap-10 justify-center items-center mt-5 lg:flex-row">
                             <img src={react} alt="" className='h-14 w-14'/>
                             <img src={express} alt="" className='h-14 w-14'/>
                             <img src={tailwind} alt="" className='h-14 w-14 object-contain'/>
@@ -66,8 +66,8 @@ const Projects = () => {
                 </div>
 
 
-                <div onMouseOver={() => {setId(2);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-1 furniture row-span-2 h-full w-full relative ease-in-out delay-1000`}>
-                   <img src={realEstate} alt="" className='-z-10 h-full w-full'/>
+                <div onMouseOver={() => {setId(2);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-3 furniture lg:row-span-2 h-full w-full relative ease-in-out delay-1000 cursor-pointer lg:col-span-1`}>
+                   <img src={realEstate} alt="" className='-z-10 h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 2 &&
                         <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
@@ -83,7 +83,7 @@ const Projects = () => {
                         <img src={realEstate} alt="furniture" className=''/>
                         <h3 className="font-semibold text-white text-center text-lg mt-5">Real Estate Website</h3>
                         <h3 className='text-white font-semibold text-center mt-5'>Technology Used</h3>
-                        <div className="flex gap-10 justify-center mt-5">
+                        <div className="flex flex-wrap gap-10 justify-center items-center mt-5 lg:flex-row">
                             <img src={react} alt="" className='h-14 w-14'/>
                            
                             <img src={tailwind} alt="" className='h-14 w-14 object-contain'/>
@@ -109,8 +109,8 @@ const Projects = () => {
                 </div>
 
 
-                <div onMouseOver={() => {setId(3);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-2 furniture row-span-1 h-full w-full relative ease-in-out delay-1000`}>
-                   <img src={game} alt="" className='-z-10 h-full w-full'/>
+                <div onMouseOver={() => {setId(3);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-3 furniture lg:row-span-1 h-full w-full relative ease-in-out delay-1000 cursor-pointer lg:col-span-2`}>
+                   <img src={game} alt="" className='-z-10 h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 3 &&
                         <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
@@ -126,7 +126,7 @@ const Projects = () => {
                         <img src={game} alt="furniture" className=''/>
                         <h3 className="font-semibold text-white text-center text-lg mt-5">Kung Foo & Keyboard</h3>
                         <h3 className='text-white font-semibold text-center mt-5'>Technology Used</h3>
-                        <div className="flex gap-10 justify-center mt-5">
+                        <div className="flex flex-wrap gap-10 justify-center items-center mt-5 lg:flex-row">
                             <img src={html} alt="" className='h-14 w-14'/>
                             <img src={tailwind} alt="" className='h-14 w-14 object-contain'/>
                             <img src={js} alt="" className='h-14 w-14'/>
@@ -149,7 +149,7 @@ const Projects = () => {
                 </div>
 
 
-                <div onMouseOver={() => {setId(4);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-1 row-span-1 h-full w-full relative ease-in-out delay-1000`}>
+                <div onMouseOver={() => {setId(4);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-3 lg:row-span-1 h-full w-full relative ease-in-out delay-1000 cursor-pointer lg:col-span-1`}>
                    <img src={library} alt="" className='-z-10 h-full w-full'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 4 &&
@@ -166,7 +166,7 @@ const Projects = () => {
                         <img src={library} alt="library" className=''/>
                         <h3 className="font-semibold text-white text-center text-lg mt-5">Open Library Website</h3>
                         <h3 className='text-white font-semibold text-center mt-5'>Technology Used</h3>
-                        <div className="flex gap-10 justify-center mt-5">
+                        <div className="flex flex-wrap gap-10 justify-center items-center mt-5 lg:flex-row">
                             <img src={react} alt="" className='h-14 w-14'/>
                             <img src={express} alt="" className='h-14 w-14'/>
                             <img src={tailwind} alt="" className='h-14 w-14 object-contain'/>
@@ -193,7 +193,7 @@ const Projects = () => {
                 </div>
 
 
-                <div onMouseOver={() => {setId(5);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-2 row-span-1 h-full w-full relative ease-in-out delay-1000`}>
+                <div onMouseOver={() => {setId(5);setHover(true)}} onMouseLeave={() => setHover(false)} className={`col-span-3 lg:row-span-1 h-full w-full relative ease-in-out delay-1000 cursor-pointer lg:col-span-2`}>
                    <img src={microWork} alt="" className='-z-10 h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 5 &&
@@ -210,7 +210,7 @@ const Projects = () => {
                         <img src={microWork} alt="micro-work-website" className=''/>
                         <h3 className="font-semibold text-white text-center text-lg mt-5">Micro Worker Website</h3>
                         <h3 className='text-white font-semibold text-center mt-5'>Technology Used</h3>
-                        <div className="flex gap-10 justify-center mt-5">
+                        <div className="flex flex-wrap gap-10 justify-center mt-5 lg:flex-row items-center">
                             <img src={react} alt="" className='h-14 w-14'/>
                             <img src={express} alt="" className='h-14 w-14'/>
                             <img src={tailwind} alt="" className='h-14 w-14 object-contain'/>

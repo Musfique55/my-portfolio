@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
+
 import {  BiMenuAltRight } from "react-icons/bi";
 import { FaDownload } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
     const [scroll,setScroll] = useState(0);
     const [mobileMenu,setMobileMenu] = useState(false);
+    
+
     useEffect(() => {
         window.addEventListener('scroll',() => {
             setScroll(scrollY)
         })
     },[scroll])
     
-   
+    
+    
     return (
         <div >
             {/* desktop menu */}
@@ -24,7 +28,8 @@ const Navbar = () => {
                 <li><HashLink smooth to="/#projects">Projects</HashLink></li> 
                 <li><HashLink smooth to="/#contact">Contact</HashLink></li> 
             </ul>
-            <button className="text-white blur-0 flex items-center gap-2 bg-[#FF6D5A] font-semibold px-4 py-2 rounded-xl"><FaDownload></FaDownload> Download CV</button>
+            <a href="/src/assets/Beige Brown Warm Classic Project Manager CV.pdf" className="text-white blur-0 flex items-center gap-2 bg-[#FF6D5A] font-semibold px-4 py-2 rounded-xl" download="Musfique-Patwary's CV"><FaDownload></FaDownload> Download CV</a>
+           
             </div>
             {/* mobile menu */}
             <div className={`lg:hidden flex justify-between border-b px-12 py-8 items-center fixed w-full z-50  border-[rgba(56,57,60,1)] ${scroll > 30 ? "bg-[rgba(0,0,0,0.8)]" : ''}`}>
