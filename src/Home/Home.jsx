@@ -9,7 +9,6 @@ import mongo from '../assets/mongo.png';
 import firebase from '../assets/firebase.png';
 import bootstrap from '../assets/bootstrap.png';
 import hero from '../assets/hero_img.png';
-import {  FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 import Marquee from 'react-fast-marquee';
@@ -17,6 +16,8 @@ import ParallaxText from '../Components/Velocity';
 import Footer from '../Components/Footer';
 import Contact from '../Components/Contact';
 import Projects from '../Components/Projects';
+import About from '../Components/About';
+import Education from '../Components/Education';
 const Home = () => {
     return (
         <div className="overflow-hidden ">
@@ -37,15 +38,14 @@ const Home = () => {
                     
                 </div>
                 <div className="flex mt-20 gap-6">
-                <Link to={'facebook.com'}>
+                <Link to={'https://www.facebook.com/musfique.patwaryy/'} target='_'>
                 <FaFacebook className='text-2xl text-[#f64f59] cursor-pointer'/>
                 </Link>
-                <Link> <FaLinkedin className='text-2xl text-[#f64f59] cursor-pointer'/>
+                <Link to={'https://www.linkedin.com/in/musfiquepatwary/'} target='_'> <FaLinkedin className='text-2xl text-[#f64f59] cursor-pointer'/>
                 </Link>
-               <Link><FaGithub className='text-2xl text-[#f64f59] cursor-pointer'/>
+               <Link to={'https://github.com/Musfique55'} target='_'><FaGithub className='text-2xl text-[#f64f59] cursor-pointer'/>
                </Link>
-                <Link><FaXTwitter className='text-2xl text-[#f64f59] cursor-pointer'/>
-                </Link>
+                
                 </div>
               </div>
               <div className='flex justify-center relative items-center flex-col order-first lg:order-2'>
@@ -71,9 +71,7 @@ const Home = () => {
             {/* Hero section ends*/}
             
             {/* about section */}
-            <div id="about" className='h-screen text-white'>
-                   this is about 
-            </div>
+            <About></About>
             {/* about section ends */}
 
             {/* my skills  */}
@@ -102,8 +100,12 @@ const Home = () => {
             {/* my skills ends */}
 
             {/* projects */}
-
             <Projects></Projects>
+            {/* project ends */}
+
+            {/* education */}
+            <Education></Education>
+            {/* education ends */}
 
             {/* contact */}
             <Contact></Contact>

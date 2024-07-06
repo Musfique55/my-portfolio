@@ -19,7 +19,7 @@ const Projects = () => {
 
     
     return ( 
-        <div className='px-5 lg:px-12'>
+        <div id='projects' className='px-5 lg:px-12'>
              <h2 className="text-white opacity-80 text-xl w-fit mx-auto px-8 py-2 bg-[rgba(255,255,255,0.05)] rounded-full border-4 border-[rgb(32,32,32)] border-spacing-4 my-12"> Recent Projects</h2>
             <div className='grid grid-cols-3 grid-rows-3 gap-6 '>
 
@@ -27,7 +27,7 @@ const Projects = () => {
                    <img src={furniture}  alt="" className=' h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 1 &&
-                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
+                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-20 h-full transition-all'>
                             <button className="btn bg-[#FF6D5A] hover:bg-[#FF6D5A] text-white font-semibold absolute border-none m-auto left-0 right-0 top-0 bottom-0 w-fit" onClick={()=>document.getElementById('my_modal_3').showModal()}>View Details</button>
                         </div>
                     }
@@ -70,7 +70,7 @@ const Projects = () => {
                    <img src={realEstate} alt="" className='-z-10 h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 2 &&
-                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
+                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-20 h-full transition-all'>
                             <button className="btn bg-[#FF6D5A] hover:bg-[#FF6D5A] text-white font-semibold absolute border-none m-auto left-0 right-0 top-0 bottom-0 w-fit" onClick={()=>document.getElementById('my_modal_4').showModal()}>View Details</button>
                         </div>
                     }
@@ -113,7 +113,7 @@ const Projects = () => {
                    <img src={game} alt="" className='-z-10 h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 3 &&
-                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
+                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-20 h-full transition-all'>
                             <button className="btn bg-[#FF6D5A] hover:bg-[#FF6D5A] text-white font-semibold absolute border-none m-auto left-0 right-0 top-0 bottom-0 w-fit" onClick={()=>document.getElementById('my_modal_5').showModal()}>View Details</button>
                         </div>
                     }
@@ -153,7 +153,7 @@ const Projects = () => {
                    <img src={library} alt="" className='-z-10 h-full w-full'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 4 &&
-                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
+                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-20 h-full transition-all'>
                             <button className="btn bg-[#FF6D5A] hover:bg-[#FF6D5A] text-white font-semibold absolute border-none m-auto left-0 right-0 top-0 bottom-0 w-fit" onClick={()=>document.getElementById('my_modal_6').showModal()}>View Details</button>
                         </div>
                     }
@@ -197,7 +197,7 @@ const Projects = () => {
                    <img src={microWork} alt="" className='-z-10 h-full w-full object-cover'/>
                     {/* You can open the modal using document.getElementById('ID').showModal() method */}
                     {  hover && id === 5 &&
-                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-50 h-full transition-all'>
+                        <div className='w-full bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] absolute m-auto top-0 right-0 left-0 bottom-0 z-20 h-full transition-all'>
                             <button className="btn bg-[#FF6D5A] hover:bg-[#FF6D5A] text-white font-semibold absolute border-none m-auto left-0 right-0 top-0 bottom-0 w-fit" onClick={()=>document.getElementById('my_modal_7').showModal()}>View Details</button>
                         </div>
                     }
